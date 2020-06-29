@@ -1,4 +1,5 @@
 import React, { Component} from 'react';
+import Container from './Container';
 import './App.css';
 import { getAllStudents } from './client';
 import {
@@ -61,10 +62,13 @@ class App extends Component {
       ];   
 
       return ( 
+        <Container>
       <Table 
       dataSource={students} 
       columns={columns} 
+      pagination={false}
       rowKey='studentId' />
+      </Container>
       );
     }
     
