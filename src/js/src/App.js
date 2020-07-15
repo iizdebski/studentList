@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import Container from './Container';
+import Footer from './Footer';
 import './App.css';
 import { getAllStudents } from './client';
 import {
@@ -99,6 +100,7 @@ class App extends Component {
       columns={columns} 
       pagination={false}
       rowKey='studentId' />
+      <Footer numberOfStudents={students.length}></Footer>
       </Container>
       );
     }
