@@ -34,7 +34,7 @@ public class StudentDataAccessService {
         return jdbcTemplate.query(sql, mapStudentFromDb());
     }
 
-    public int insertStudent(UUID studentId, Student student) {
+    int insertStudent(UUID studentId, Student student) {
         String sql = "" +
                 "INSERT INTO student ( " +
                 " student_id," +
