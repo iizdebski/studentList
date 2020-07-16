@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Formik } from 'formik';
+import { Input, Button } from 'antd';
+
+const inputBottomMargin = {marginBottom: '10px'};
 
 class AddStudentForm extends Component {
     render () {
-        return (
-            <div>
-     <h1>Anywhere in your app!</h1>
+        return (        
      <Formik
        initialValues={{ email: '', password: '' }}
        validate={values => {
@@ -37,29 +38,48 @@ class AddStudentForm extends Component {
          /* and other goodies */
        }) => (
          <form onSubmit={handleSubmit}>
-           <input
-             type="email"
-             name="email"
+           <Input    
+             style={inputBottomMargin}    
+             name="firstName"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.firstName}
+             placeholder='First name. E.g John'
+           />
+           {errors.firstName && touched.firstName && errors.firstName}
+           <Input      
+             style={inputBottomMargin}      
+             name="lastName"
+             onChange={handleChange}
+             onBlur={handleBlur}
+             value={values.lastName}
+             placeholder='Last name. E.g Smith'
+           />
+           {errors.lastName && touched.lastName && errors.lastName}
+           <Input   
+             style={inputBottomMargin}         
+             name="email"       
              onChange={handleChange}
              onBlur={handleBlur}
              value={values.email}
+             placeholder='Email. E.g example@gmail.com'
            />
            {errors.email && touched.email && errors.email}
-           <input
-             type="password"
-             name="password"
+           <Input    
+             style={inputBottomMargin}        
+             name="gender"          
              onChange={handleChange}
              onBlur={handleBlur}
-             value={values.password}
+             value={values.gender}
+             placeholder='Gender. E.g Male or Female'
            />
-           {errors.password && touched.password && errors.password}
-           <button type="submit" disabled={isSubmitting}>
+           {errors.gender && touched.gender && errors.gender}           
+           <Button type="submit" disabled={isSubmitting}>
              Submit
-           </button>
+           </Button>
          </form>
        )}
      </Formik>
-   </div>
         );
     }
 }

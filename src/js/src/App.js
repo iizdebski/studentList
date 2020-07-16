@@ -112,8 +112,7 @@ class App extends Component {
          visible={isAddStudentModalVisible}
          onOk={this.closeAddStudentModal}
          onCancel={this.closeAddStudentModal}
-         width={1000}>
-           <h1>Hello Modal With Antd</h1>   
+         width={1000}>        
            <AddStudentForm />
       </Modal>
       <Footer 
