@@ -3,6 +3,7 @@ import Container from './Container';
 import Footer from './Footer';
 import './App.css';
 import { getAllStudents } from './client';
+import AddStudentForm from './forms/AddStudentForm';
 import {
   Table,
   Avatar,
@@ -112,8 +113,8 @@ class App extends Component {
          onOk={this.closeAddStudentModal}
          onCancel={this.closeAddStudentModal}
          width={1000}>
-           <h1>Hello Modal With Antd</h1>
-
+           <h1>Hello Modal With Antd</h1>   
+           <AddStudentForm />
       </Modal>
       <Footer 
       numberOfStudents={students.length}
