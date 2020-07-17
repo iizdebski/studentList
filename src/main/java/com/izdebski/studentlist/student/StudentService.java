@@ -2,7 +2,6 @@ package com.izdebski.studentlist.student;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
 
 import java.util.List;
 import java.util.Optional;
@@ -30,6 +29,7 @@ public class StudentService {
         UUID newStudentId = Optional.ofNullable(studentId)
                 .orElse(UUID.randomUUID());
 
+        // TODO: Validate email
         // TODO: Verify that email is not taken
 
         studentDataAccessService.insertStudent(newStudentId, student);

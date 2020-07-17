@@ -49,7 +49,7 @@ public class StudentDataAccessService {
                 student.getFirstName(),
                 student.getLastName(),
                 student.getEmail(),
-                student.getGender()
+                student.getGender().name().toUpperCase()
         );
     }
 
