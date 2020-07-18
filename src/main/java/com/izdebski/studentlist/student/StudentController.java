@@ -20,8 +20,8 @@ public class StudentController {
 
     @GetMapping
     public List<Student> getAllStudents() {
-        throw new ApiRequestException("Oops cannot get all students with custom exception");
-        // return studentService.getAllStudents();
+        //throw new ApiRequestException("Oops cannot get all students with custom exception");
+        return studentService.getAllStudents();
     }
 
     @PostMapping
