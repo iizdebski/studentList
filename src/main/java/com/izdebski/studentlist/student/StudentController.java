@@ -1,6 +1,5 @@
 package com.izdebski.studentlist.student;
 
-import com.izdebski.studentlist.exception.ApiRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
