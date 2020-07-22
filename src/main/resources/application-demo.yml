@@ -1,1 +1,9 @@
+server:
+  port: 5000
 
+app:
+  datasource:
+    jdbc-url: jdbc:postgresql://studentlist.co8xx54bpfj3.eu-central-1.rds.amazonaws.com:5432/studentlist
+    username: ivan
+    password: Tc852beoa
+    pool-size: 30
