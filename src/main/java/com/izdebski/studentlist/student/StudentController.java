@@ -1,5 +1,6 @@
 package com.izdebski.studentlist.student;
 
+import com.izdebski.studentlist.exception.ApiRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -8,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("api/students")
+@RequestMapping("students")
 public class StudentController {
 
     private final StudentService studentService;
@@ -33,5 +34,17 @@ public class StudentController {
     @PostMapping
     public void addNewStudent(@RequestBody @Valid Student student) {
         studentService.addNewStudent(student);
+    }
+
+    @PutMapping(path = "{studentId}")
+    public void updateStudent(@PathVariable("studentId") UUID studentId,
+                              @RequestBody Student student) {
+        studentService.updateStudent(studentId, student);
+    }
+
+    @DeleteMapping(path = "{studentId}")
+    public void deleteStudent(
+            @PathVariable("studentId") UUID studentId) {
+        studentService.deleteStudent(studentId);
     }
 }

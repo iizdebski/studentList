@@ -1,4 +1,5 @@
-CREATE TABLE IF NOT EXISTS course (
+CREATE TABLE IF NOT EXISTS course
+(
 course_id UUID NOT NULL PRIMARY KEY,
 name VARCHAR(255) NOT NULL UNIQUE,
 description TEXT NOT NULL,
@@ -6,7 +7,8 @@ department VARCHAR(255),
 teacher_name VARCHAR(100)
 );
 
-CREATE TABLE IF NOT EXISTS student_course (
+CREATE TABLE IF NOT EXISTS student_course
+(
 student_id UUID NOT NULL REFERENCES student (student_id),
 course_id UUID NOT NULL REFERENCES course (course_id),
 start_date DATE NOT NULL,
