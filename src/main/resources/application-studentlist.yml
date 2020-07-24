@@ -1,7 +1,10 @@
+server:
+  port: 5000
+
 app:
   datasource:
-    jdbc-url: jdbc:postgresql://localhost:5432/studentlist
-    username: postgres
-    password: postgres
+    jdbc-url: jdbc:postgresql:
+    username:
+    password:
     pool-size: 30
 
