@@ -1,7 +1,11 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+
 app:
   datasource:
     jdbc-url: jdbc:postgresql://localhost:5432/studentlist
-    username:
-    password:
+    username: postgres
+    password: postgres
     pool-size: 30
 
