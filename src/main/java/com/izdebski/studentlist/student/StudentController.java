@@ -1,6 +1,5 @@
 package com.izdebski.studentlist.student;
 
-import com.izdebski.studentlist.exception.ApiRequestException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -9,7 +8,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("students")
+@RequestMapping("api/students")
 public class StudentController {
 
     private final StudentService studentService;
