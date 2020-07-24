@@ -60,7 +60,7 @@
 
 	<profiles>
 		<profile>
-			<id>demo</id>
+			<id>studentlist</id>
 			<build>
 				<plugins>
 
