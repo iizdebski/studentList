@@ -12,4 +12,4 @@ matrix:
     - language: java
       jdk: openjdk11
       script:
-        - ./api/mvn build
+        - ./api/mvnw build
