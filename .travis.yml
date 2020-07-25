@@ -1,15 +1,39 @@
-dist: trusty
+# dist: trusty
 
-matrix:
-  include:
-    - language: node_js
-      node_js:
-        - "12.18.2"
-      before_script: cd client
-      script:
-        - npm install
-        - npm run build
-    - language: java
-      jdk: openjdk11
-      script:
-        - ./api/mvnw build
+# matrix:
+#  include:
+#  language: node_js
+
+#   node_js:
+#   "12.18.2"
+#    before_script: cd client
+#    script:
+#    npm install
+#    npm run build
+
+# https://docs.travis-ci.com/user/languages/java/
+# language: java
+# jdk: openjdk11
+
+##https://dzone.com/articles/travis-ci-tutorial-java-projects
+#cache:
+#  directories:
+#  - $HOME/.m2
+#
+## https://docs.travis-ci.com/user/database-setup/#PostgreSQL
+#before_script:
+#- psql -c 'create database studentlist' -U postgres
+#- psql -c 'create user "postgres"; grant all privileges on database studentlist to "postgres"' -U postgres
+#
+## https://docs.travis-ci.com/user/customizing-the-build#Building-Specific-Branches
+#branches:
+#  only:
+#  - master
+#
+## https://stackoverflow.com/a/49852690/548473:
+#services:
+#  - postgresql
+
+## https://docs.travis-ci.com/user/notifications#Configuring-email-notifications
+##notifications:
+##  email: false
