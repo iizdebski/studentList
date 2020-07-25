@@ -1,6 +1,6 @@
 # Student Registration
 
-####**[Click here](http://springbootreactfullstack-env.eba-vkjfxake.eu-central-1.elasticbeanstalk.com/) to add, update, delete a student.** ####
+**[Click here](http://springbootreactfullstack-env.eba-vkjfxake.eu-central-1.elasticbeanstalk.com/) to add, update, delete a student.** 
 
 
 
