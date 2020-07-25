@@ -1,6 +1,15 @@
-language:java
-jdk:
-  - openjdk11
+dist: trusty
 
-    script: ./mvnw clean install
-
+matrix:
+  include:
+    - language: node_js
+      node_js:
+        - "12.18.2"
+      before_script: cd client
+      script:
+        - npm install
+        - npm run build
+    - language: java
+      jdk: openjdk11
+      script:
+        - ./api/mvn build
