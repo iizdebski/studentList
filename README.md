@@ -15,7 +15,7 @@
 * **AWS Elastic Beanstalk**
 
 <p align = "center">
-<img src="https://github.com/iizdebski/studentList/blob/master/images/studentlist1.JPG">
+<img src="https://github.com/iizdebski/studentList/blob/master/images/studentList.JPG">
 </p>
 
 <p align = "center">
