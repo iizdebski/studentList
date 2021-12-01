@@ -4,6 +4,21 @@
 
 **[Click here](http://springbootreactfullstack-env.eba-vkjfxake.eu-central-1.elasticbeanstalk.com/) to add, update, delete a student.**
 
+<p align = "center">
+<img src="https://github.com/iizdebski/studentList/blob/master/images/studentlist1.JPG">
+</p>
+
+<p align = "center">
+<img src="https://github.com/iizdebski/studentList/blob/master/images/studentList2.JPG">
+</p>
+
+<p align = "center">
+<img src="https://github.com/iizdebski/studentList/blob/master/images/studentList3.JPG"> 
+</p>
+
+<p align = "center">
+<img src="https://github.com/iizdebski/studentList/blob/master/images/studentList4.JPG">
+</p>
 
 ## ***Technologies used:***
 
