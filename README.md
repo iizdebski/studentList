@@ -4,6 +4,16 @@
 
 **[Click here](http://springbootreactfullstack-env.eba-vkjfxake.eu-central-1.elasticbeanstalk.com/) to add, update, delete a student.**
 
+## ***Technologies used:***
+
+* **Spring Boot 2**
+* **React JS**
+* **Antd**
+* **Docker**
+* **PostgreSQL**
+* **Flyway**
+* **AWS Elastic Beanstalk**
+
 <p align = "center">
 <img src="https://github.com/iizdebski/studentList/blob/master/images/studentlist1.JPG">
 </p>
@@ -20,12 +30,3 @@
 <img src="https://github.com/iizdebski/studentList/blob/master/images/studentList4.JPG">
 </p>
 
-## ***Technologies used:***
-
-* **Spring Boot 2**
-* **React JS**
-* **Antd**
-* **Docker**
-* **PostgreSQL**
-* **Flyway**
-* **AWS Elastic Beanstalk**
